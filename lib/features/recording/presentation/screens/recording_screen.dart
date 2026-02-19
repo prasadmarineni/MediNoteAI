@@ -244,7 +244,7 @@ class _RecordingScreenState extends ConsumerState<RecordingScreen> {
               builder: (context) => AlertDialog(
                 title: const Text('Finish Recording?'),
                 content: const Text(
-                  'The recording will be sent to Sarvam AI for transcription and then to AI for clinical summary generation.',
+                  'The recording will be sent to AI for transcription and clinical summary generation.',
                 ),
                 actions: [
                   TextButton(
@@ -376,7 +376,7 @@ class _RecordingScreenState extends ConsumerState<RecordingScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Transcribing with Sarvam AI, then generating clinical summary...',
+              'Transcribing audio, then generating clinical summary...',
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Theme.of(context).colorScheme.onSurfaceVariant,
@@ -416,7 +416,7 @@ class _RecordingScreenState extends ConsumerState<RecordingScreen> {
             .timeout(
               const Duration(minutes: 3),
               onTimeout: () =>
-                  throw 'Sarvam AI STT timed out. Please check your internet and try again.',
+                  throw 'AI transcription timed out. Please check your internet and try again.',
             );
       } else {
         throw 'No audio file was recorded';

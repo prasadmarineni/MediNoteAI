@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
+import 'package:medinote_ai/firebase_options.dart';
 
 class FirebaseService {
   static bool _isInitialized = false;
@@ -11,13 +12,15 @@ class FirebaseService {
           defaultTargetPlatform == TargetPlatform.android ||
           defaultTargetPlatform == TargetPlatform.iOS ||
           defaultTargetPlatform == TargetPlatform.macOS) {
-        // On macOS, Firebase.initializeApp() requires explicit options or plist
-        // If they are missing, this will throw.
-        await Firebase.initializeApp();
+        // Initialize Firebase with the medinoteai-2 project configuration
+        await Firebase.initializeApp(
+          options: DefaultFirebaseOptions.currentPlatform,
+        );
         _isInitialized = true;
+        debugPrint('✅ Firebase initialized successfully with project: medinoteai-2');
       }
     } catch (e) {
-      debugPrint('Firebase initialization failed (Demo Mode bypassing): $e');
+      debugPrint('❌ Firebase initialization failed: $e');
       _isInitialized = false;
     }
   }

@@ -1,1 +1,37 @@
-{"installed":{"client_id":"946282524275-9rfa122pb2or4c6cs5r2fvhop0ka7hbh.apps.googleusercontent.com","project_id":"medinoteai-2","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs"}}
+{
+  "project_info": {
+    "project_number": "946282524275",
+    "project_id": "medinoteai-2",
+    "storage_bucket": "medinoteai-2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946282524275:android:f42a8a66d4cc267e070406",
+        "android_client_info": {
+          "package_name": "com.svacron.apps.medinoteai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRZEKvjuDDZZF3sSkugK4fgswPpExn-ts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946282524275-70c124ei95jecvft5v1lbrikndtfde50.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.svacron.apps.medinoteai"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
