@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -8,9 +7,6 @@ import 'package:medinote_ai/features/summary/domain/models/clinical_summary.dart
 import 'package:medinote_ai/features/summary/presentation/screens/summary_screen.dart';
 import 'package:medinote_ai/features/history/presentation/providers/history_provider.dart';
 import 'package:medinote_ai/core/providers/security_provider.dart';
-import 'package:medinote_ai/features/recording/data/services/sarvam_stt_service.dart';
-import 'package:medinote_ai/features/summary/presentation/providers/ai_service_provider.dart';
-import 'package:medinote_ai/features/settings/presentation/providers/preferences_provider.dart';
 
 class HistoryScreen extends ConsumerStatefulWidget {
   const HistoryScreen({super.key});
