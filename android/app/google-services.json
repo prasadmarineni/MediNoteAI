@@ -12,7 +12,12 @@
           "package_name": "com.svacron.apps.medinoteai"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "946282524275-hhsg70dg9qqkqtd033eg0qja5k796l59.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDRZEKvjuDDZZF3sSkugK4fgswPpExn-ts"
@@ -21,6 +26,10 @@
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
+            {
+              "client_id": "946282524275-hhsg70dg9qqkqtd033eg0qja5k796l59.apps.googleusercontent.com",
+              "client_type": 3
+            },
             {
               "client_id": "946282524275-70c124ei95jecvft5v1lbrikndtfde50.apps.googleusercontent.com",
               "client_type": 2,
